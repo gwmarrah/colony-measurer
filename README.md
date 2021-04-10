@@ -37,12 +37,12 @@ Image file datatype must be uint8.
     
 Large pixel intensity numbers have lighter intensities and small pixel intensity numbers have darker intensities. Change numbers as needed.
 
-firstMask: A number that specifies the pixel intesity that will be masked. Every pixel with an intensity above this number will be removed (light pixels).
+firstMask: A number that specifies the pixel intensity that will be masked. Every pixel with an intensity above this number will be removed (light pixels).
 *Filter makes the image uniform
 
-secondMaskLow: A number that specifies the pixel intesity that will be masked. Every pixel with an intensity below this number will be removed (dark pixels).
+secondMaskLow: A number that specifies the pixel intensity that will be masked. Every pixel with an intensity below this number will be removed (dark pixels).
 
-secondMaskHigh: A number that specifies the pixel intesity that will be masked. Every pixel with an intensity above this number will be removed (light pixels).
+secondMaskHigh: A number that specifies the pixel intensity that will be masked. Every pixel with an intensity above this number will be removed (light pixels).
     Should be more stringent(lower number) than the first mask.
 
 smallSize: A number that specifies the size of small objects that will be removed. Every object with less pixels than this number will be removed.
@@ -57,7 +57,7 @@ stdThreshold: Number that specifies how symmetrical the colonies must be. The lo
 results: Shows the images and analyzing step by step if True. If False, skips showing these things.
     default is True. Change as needed.
 
-manual: allows you to manually analyze/skip outliers if True. Analyzes every colony that survives "clean up" if False.
+manual: allows you to manually include/skip outliers if True. Analyzes every colony that survives "clean up" if False.
     default is False. Change as needed.
 
 stdManual: a number that specifies what an outlier is in the dataset. The number of standard deviations away from the median.
@@ -75,7 +75,6 @@ The class will be created like below:
 
     colSizeAnalyzer = analyzer(Folders, imVectors, imStrains, imPlates, imRepNums, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, control)
 
-If any of these do not apply to your colony images just put NA.
 Image file datatype must be uint8.
 checkFiletype quickly goes through all the image files and ensures they are uint8. If they are not, it throws an error.
 
@@ -90,6 +89,8 @@ imPlates: The resistance used or the plates in the images. Must be a list.
 imRepNums: The replicate numbers of the images. Must be a list.
 
 imType: the image type used. Must be a string. Ex. '.png'
+
+If any of these do not apply to your colony images just put NA.
 
 Importing the image files:
     The image files must be named like this: 
