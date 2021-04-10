@@ -62,12 +62,12 @@ Suggestions:
 '''
 
 # code needed to run program
-Folders = ['BruNrnC_Rescue_041819']
-Folders2 = ['BruNrnC_Rescue_042419']
-imVectors = ['D83A', 'empty', 'H78A', 'H204A', 'K102A', 'L30A', 'L30F', 'WT', 'Y14A', 'Y150A']
-imStrains = ['dOrn']
-imPlates = ['Gm+Ara']
-imRepNums = ['NA']
+Folders = []
+Folders2 = []
+imVectors = []
+imStrains = []
+imPlates = []
+imRepNums = []
 imType = '.png'
 firstMask = 190
 secondMaskLow = 50
@@ -75,24 +75,24 @@ secondMaskHigh = 185
 smallSize = 4
 largeSize = 235
 stdThreshold = 1.75
-control = ['empty', 'dOrn', 'Gm+Ara']
+control = []
 
 # creates the analyzer
 col = ca.analyzer(Folders, imVectors, imStrains, imPlates, imRepNums, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, control)
-col2 = ca.analyzer(Folders2, imVectors, imStrains, imPlates, imRepNums, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, control)
+# col2 = ca.analyzer(Folders2, imVectors, imStrains, imPlates, imRepNums, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, control) # can uncomment and also make more if neede
 
 # checks file type of images
 col.checkFiletype()
-col2.checkFiletype()
+#col2.checkFiletype() # can uncomment and also make more if needed
 
 # gets the control datatype
 control = col.getControl()
-control2 = col2.getControl()
+#control2 = col2.getControl() # can uncomment and also make more if needed
 
 # analyzes the images
 data = col.analyze(control)
-data2 = col2.analyze(control2)
+#data2 = col2.analyze(control2) # can uncomment and also make more if needed
 
 # creates and exports the data
-ca.makeData('BruNrnCRescue_041819_sum', 'BruNrnCRescue_041819_raw', [data])
-ca.makeData('BruNrnCRescue_042419_sum', 'BruNrnCRescue_042419_raw', [data2])
+ca.makeData('', '', [data])
+#ca.makeData('', ';, [data2]) # can uncomment and also make more if needed
