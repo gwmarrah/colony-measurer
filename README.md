@@ -27,7 +27,7 @@ imType: the image type used. Must be a string. Ex. '.png'
 If any of these do not apply to your colony image just put NA.
 Image file datatype must be uint8.
 
-**Importing the image File**:
+**Importing the image file**:
     The image file must be named like this: 
         
         vector_strain_plate_repnumber.filetype
