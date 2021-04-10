@@ -217,18 +217,19 @@ def makeData(exportNameSum, exportNameRaw, listRawData):
     print('Check folder to see new ' + exportNameSum + ' and ' + exportNameRaw + ' file.')
 
 def main():
-    Folders = ['NrnC_Rescue_041319']
-    imVectors = ['NA']
-    imStrains = ['WT']
-    imPlates = ['LB']
-    imRepNums = ['1']
-    imType = '.png'
-    control = ['NA', 'dOrn', 'LB']
+    # Input info here
+    Folders = []
+    imVectors = []
+    imStrains = []
+    imPlates = []
+    imRepNums = []
+    imType = ''
+    control = []
 
     col = analyzer(Folders, imVectors, imStrains, imPlates, imRepNums, imType, 190, 50, 185, 2, 235, 1.5, control)
     control_size = col.getControl()
     data = col.analyze(control_size)
 
-    makeData('WTvdOrn_041319_sum', 'WTvdOrn_041319_raw', [data])
+    makeData('', '', [data])
 
 if __name__ == '__main__': main()

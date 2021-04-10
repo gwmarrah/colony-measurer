@@ -57,4 +57,4 @@ Suggestions:
 '''
 
 # code needed to run program
-cm.measure(imFolder = 'BruNrnC_Rescue_042419', imVector = 'empty', imStrain = 'dOrn', imPlate = 'Gm+Ara', imRepNum = 'NA', imType = '.png', firstMask = 190, secondMaskLow = 50, secondMaskHigh = 185, smallSize = 2, largeSize = 235, stdThreshold = 1.5, results = True, manual = False, stdManual = 1)
+cm.measure(imFolder = '', imVector = '', imStrain = '', imPlate = '', imRepNum = '', imType = '', firstMask = 190, secondMaskLow = 50, secondMaskHigh = 185, smallSize = 2, largeSize = 235, stdThreshold = 1.5, results = True, manual = False, stdManual = 1)

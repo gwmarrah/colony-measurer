@@ -262,7 +262,7 @@ def measure(imFolder, imVector, imStrain, imPlate, imRepNum, imType , firstMask,
     return data
 
 def main():
-    measure('NrnC_Rescue_041319', 'NA', 'WT', 'LB', '1', '.png', firstMask = 190, secondMaskLow = 50, secondMaskHigh = 185, smallSize = 2, largeSize = 235, stdThreshold = 1)
+    measure('', '', '', '', '', '', firstMask = 190, secondMaskLow = 50, secondMaskHigh = 185, smallSize = 2, largeSize = 235, stdThreshold = 1)
 
 
 if __name__ == '__main__': main()
