@@ -27,13 +27,13 @@ imType: the image type used. Must be a string. Ex. '.png'
 If any of these do not apply to your colony image just put NA.
 Image file datatype must be uint8.
 
-Importing the image File:
+**Importing the image File**:
     The image file must be named like this: 
         
         vector_strain_plate_repnumber.filetype
    
 
-Cleaning up the image:
+**Cleaning up the image**:
     
 Large pixel intensity numbers have lighter intensities and small pixel intensity numbers have darker intensities. Change numbers as needed.
 
@@ -52,7 +52,7 @@ largeSize: A number that specifies the size of large objects that will be remove
 stdThreshold: Number that specifies how symmetrical the colonies must be. The lower the number the more symmetrical the colonies must be.
         Unsymmetrical colonies are disposed of.
 
-Measuring colony size:
+**Measuring colony size**:
     
 results: Shows the images and analyzing step by step if True. If False, skips showing these things.
     default is True. Change as needed.
@@ -96,7 +96,7 @@ Importing the image files:
     
        vector_strain_plate_repnumber.filetype
 
-Cleaning up the image:
+**Cleaning up the image**:
     
 Large pixel intensity numbers have lighter intensities and small pixel intensity numbers have darker intensities. Change numbers as needed.
 
@@ -115,7 +115,7 @@ largeSize: A number that specifies the size of large objects that will be remove
 stdThreshold: Number that specifies how symmetrical the colonies must be. The lower the number the more symmetrical the colonies must be.
     Unsymmetrical colonies are disposed of.
 
-Measuring colony size:
+**Measuring colony size**:
     
 control: the vector, strain, and plate of the control. Used to make the size ratio. Must be a list.
     
@@ -123,7 +123,7 @@ Ex.
 
     control = ['pJHAPAOrn', 'dOrn', 'Gm']
 
-Make and Export the data:
+**Make and Export the data**:
     Method will be used like below:
     
     makeData(exportNameSum, exportNameRaw, listRawData)
