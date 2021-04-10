@@ -1,11 +1,11 @@
 # colony-measurer
-Code to measure the square area of colonies in an image file exports data.
+Code to measure the square area of colonies in an image file and export the data.
 
 The heavylifters are the colSizeMeasurer.py and colSizeAnalyzer.py, but the input versions are more user-friendly and import the required functions.
 
 Below are notes/instructions on how to use the user-friendly input files. The original files must be in the same folder as the input files for use.
 
-**Notes on colSizeMeasurer_input.py**
+**Notes on colSizeMeasurer_input.py**:
 The function to measure colony size will be called like below:
 cm.measure(imFolder, imVector, imStrain, imPlate, imRepNum, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, results = True, manual = False, stdManual = .65)
 Last three values are not necessarily needed because they have default values
@@ -49,7 +49,7 @@ Suggestions:
         Change the clean up values until the clean up is up to par.
         Take those optimized numbers and use the colSizeAnalyzer to analyze all your images processively with manual set to True.
 
-**Notes on colSizeAnalyzer_input.py**
+**Notes on colSizeAnalyzer_input.py**:
 The class will be created like below:
 colSizeAnalyzer = analyzer(Folders, imVectors, imStrains, imPlates, imRepNums, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, control)
 
