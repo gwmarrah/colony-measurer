@@ -1,7 +1,7 @@
 # colony-measurer
 Python code to measure the square area of colonies in an image file and export the data.
 
-The heavy lifters are the colSizeMeasurer.py and colSizeAnalyzer.py, but the input versions are more user-friendly and import the required functions.
+The heavy lifters are colSizeMeasurer.py and colSizeAnalyzer.py, but the input versions are more user-friendly and import the required functions.
 
 Below are notes/instructions on how to use the user-friendly input files. The original files must be in the same folder as the input files for use.
 
