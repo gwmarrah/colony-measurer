@@ -63,7 +63,7 @@ Suggestions:
 
 # code needed to run program
 Folders = []
-Folders2 = []
+#Folders2 = [] # can uncomment and also make more if needed
 imVectors = []
 imStrains = []
 imPlates = []
