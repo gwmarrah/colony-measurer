@@ -24,6 +24,7 @@ Importing the image File:
 
 Cleaning up the image:
     Large pixel intensity numbers have lighter intensities and small pixel intensity numbers have darker intensities. Change numbers as needed.
+    
     firstMask: A number that specifies the pixel intesity that will be masked. Every pixel with an intensity above this number will be removed (light pixels).
     *Filter makes the image uniform
     secondMaskLow: A number that specifies the pixel intesity that will be masked. Every pixel with an intensity below this number will be removed (dark pixels).
@@ -35,6 +36,7 @@ Cleaning up the image:
         Unsymmetrical colonies are disposed of.
 
 Measuring colony size:
+    
     results: Shows the images and analyzing step by step if True. If False, skips showing these things.
         default is True. Change as needed.
     manual: allows you to manually analyze/skip outliers if True. Analyzes every colony that survives "clean up" if False.
@@ -68,6 +70,7 @@ Importing the image files:
 
 Cleaning up the image:
     Large pixel intensity numbers have lighter intensities and small pixel intensity numbers have darker intensities. Change numbers as needed.
+    
     firstMask: A number that specifies the pixel intesity that will be masked. Every pixel with an intensity above this number will be removed (light pixels).
     *Filter makes the image uniform*
     secondMaskLow: A number that specifies the pixel intesity that will be masked. Every pixel with an intensity below this number will be removed (dark pixels).
@@ -79,6 +82,7 @@ Cleaning up the image:
         Unsymmetrical colonies are disposed of.
 
 Measuring colony size:
+    
     control: the vector, strain, and plate of the control. Used to make the size ratio. Must be a list.
     Ex. control = ['pJHAPAOrn', 'dOrn', 'Gm']
 
