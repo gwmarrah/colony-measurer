@@ -58,7 +58,7 @@ colSizeAnalyzer = analyzer(Folders, imVectors, imStrains, imPlates, imRepNums, i
 Importing the image files:
     The image files must be named like this: vector_strain_plate_repnumber.filetype
     If any of these do not apply to your colony images just put NA.
-    Image file datatype must be uint8
+    Image file datatype must be uint8.
     checkFiletype quickly goes through all the image files and ensures they are uint8. If they are not, it throws an error.
 
     Folders: The folder names where the image files are located. Must be a list.
