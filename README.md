@@ -84,8 +84,8 @@ Measuring colony size:
 
 Make and Export the data:
     Method will be used like below:
+    
     makeData(exportNameSum, exportNameRaw, listRawData)
-
     exportNameSum: the export name of the excel file that will have the summary data
     exportNameRaw: the export name of the excel file that will have the raw data
     listRawData: list of all the raw data. Must be a list.
