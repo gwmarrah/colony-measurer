@@ -7,13 +7,18 @@ Below are notes/instructions on how to use the user-friendly input files. The or
 
 **Notes on colSizeMeasurer_input.py**:
 The function to measure colony size will be called like below:
-cm.measure(imFolder, imVector, imStrain, imPlate, imRepNum, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, results = True, manual = False, stdManual = .65)
+
+    cm.measure(imFolder, imVector, imStrain, imPlate, imRepNum, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, results = True, manual = False, stdManual = .65)
+
 Last three values are not necessarily needed because they have default values
 
 Importing the image File:
-    The image file must be named like this: vector_strain_plate_repnumber.filetype
-    If any of these do not apply to your colony image just put NA.
-    Image file datatype must be uint8
+    The image file must be named like this: 
+        
+        vector_strain_plate_repnumber.filetype
+   
+   If any of these do not apply to your colony image just put NA.
+   Image file datatype must be uint8.
 
     imFolder: The folder name where the image file is located. Must be a string.
     imVector: The vector name of the image. Must be a string.
@@ -53,13 +58,17 @@ Suggestions:
 
 **Notes on colSizeAnalyzer_input.py**:
 The class will be created like below:
-colSizeAnalyzer = analyzer(Folders, imVectors, imStrains, imPlates, imRepNums, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, control)
+
+    colSizeAnalyzer = analyzer(Folders, imVectors, imStrains, imPlates, imRepNums, imType, firstMask, secondMaskLow, secondMaskHigh, smallSize, largeSize, stdThreshold, control)
 
 Importing the image files:
-    The image files must be named like this: vector_strain_plate_repnumber.filetype
-    If any of these do not apply to your colony images just put NA.
-    Image file datatype must be uint8.
-    checkFiletype quickly goes through all the image files and ensures they are uint8. If they are not, it throws an error.
+    The image files must be named like this: 
+    
+       vector_strain_plate_repnumber.filetype
+
+If any of these do not apply to your colony images just put NA.
+Image file datatype must be uint8.
+checkFiletype quickly goes through all the image files and ensures they are uint8. If they are not, it throws an error.
 
     Folders: The folder names where the image files are located. Must be a list.
     imVectors: The vector names of the images. Must be a list.
