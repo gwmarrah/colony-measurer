@@ -20,12 +20,12 @@ Importing the image File:
    If any of these do not apply to your colony image just put NA.
    Image file datatype must be uint8.
 
-    imFolder: The folder name where the image file is located. Must be a string.
-    imVector: The vector name of the image. Must be a string.
-    imStrain: The strain name of the image. Must be a string.
-    imPlate: The resistance or the plate in the image. Must be a string.
-    imRepNum: The replicate number of the image. Must be a string.
-    imType: the image type used. Must be a string. Ex. '.png'
+imFolder: The folder name where the image file is located. Must be a string.
+imVector: The vector name of the image. Must be a string.
+imStrain: The strain name of the image. Must be a string.
+imPlate: The resistance or the plate in the image. Must be a string.
+imRepNum: The replicate number of the image. Must be a string.
+imType: the image type used. Must be a string. Ex. '.png'
 
 Cleaning up the image:
     Large pixel intensity numbers have lighter intensities and small pixel intensity numbers have darker intensities. Change numbers as needed.
